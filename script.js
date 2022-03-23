@@ -1,47 +1,25 @@
-"use stric";
+"use strict";
 
-let one = document.querySelector(".img-1");
-let two = document.querySelector(".img-2");
-let three = document.querySelector(".img-3");
-let four = document.querySelector(".img-4");
-let five = document.querySelector(".img-5");
+let one = document.querySelector("#img-1");
+let two = document.querySelector("#img-2");
+let three = document.querySelector("#img-3");
+let four = document.querySelector("#img-4");
+let five = document.querySelector("#img-5");
 
-one.addEventListener("click", function () {
-  one.style.width = "700px";
-  two.style.width = "150px";
-  three.style.width = "150px";
-  four.style.width = "150px";
-  five.style.width = "150px";
-});
+let all = document.querySelectorAll(".img");
+let bosh = document.querySelector(".galery");
 
-two.addEventListener("click", function () {
-  one.style.width = "150px";
-  two.style.width = "700px";
-  three.style.width = "150px";
-  four.style.width = "150px";
-  five.style.width = "150px";
-});
+let box = [one, two, three, four, five];
 
-three.addEventListener("click", function () {
-  one.style.width = "150px";
-  two.style.width = "150px";
-  three.style.width = "700px";
-  four.style.width = "150px";
-  five.style.width = "150px";
-});
+bosh.addEventListener("click", function (e) {
+  for (let i = 0; i < all.length; i++) {
+    all[i].classList.remove("width");
+  }
 
-four.addEventListener("click", function () {
-  one.style.width = "150px";
-  two.style.width = "150px";
-  three.style.width = "150px";
-  four.style.width = "700px";
-  five.style.width = "150px";
-});
-
-five.addEventListener("click", function () {
-  one.style.width = "150px";
-  two.style.width = "150px";
-  three.style.width = "150px";
-  four.style.width = "150px";
-  five.style.width = "700px";
+  if (e.target.classList.contains("img")) {
+    e.target.classList.add("width");
+    // const sum = e.target.classList.add("img");
+    // console.log(sum);
+    // document.querySelector(sum).style.width = `700px`;
+  }
 });

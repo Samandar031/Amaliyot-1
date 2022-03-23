@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --blue: blue;
-}
-
 .galery {
   width: 100vw;
   height: 100vh;
@@ -25,9 +21,9 @@
   margin: 10px;
 }
 
-.img-1 {
+/* #img-1 {
   width: 700px;
-}
+} */
 
 .img-2 {
   background-color: blue;
@@ -43,4 +39,10 @@
 
 .img-5 {
   background-color: chocolate;
+}
+
+.width {
+  flex-grow: 1;
+  transition: ease-in-out;
+  width: 700px;
 }
