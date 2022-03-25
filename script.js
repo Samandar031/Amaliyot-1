@@ -17,7 +17,7 @@ bosh.addEventListener("click", function (e) {
   }
 
   if (e.target.classList.contains("img")) {
-    e.target.classList.add("width");
+    e.target.classList.add("width");x
     // const sum = e.target.classList.add("img");
     // console.log(sum);
     // document.querySelector(sum).style.width = `700px`;

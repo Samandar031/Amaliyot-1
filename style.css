@@ -42,7 +42,6 @@
 }
 
 .width {
-  flex-grow: 1;
-  transition: ease-in-out;
+  transition: 2s;
   width: 700px;
 }
